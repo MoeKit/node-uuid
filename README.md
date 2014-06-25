@@ -1,5 +1,7 @@
 # node-uuid
 
+---
+
 Simple, fast generation of [RFC4122](http://www.ietf.org/rfc/rfc4122.txt) UUIDS.
 
 Features:
@@ -11,6 +13,18 @@ Features:
 * 1.1K minified and gzip'ed  (Want something smaller?  Check this [crazy shit](https://gist.github.com/982883) out! )
 * [Annotated source code](http://broofa.github.com/node-uuid/docs/uuid.html)
 * Comes with a Command Line Interface for generating uuids on the command line
+
+## use with spm && seajs
+
+`spm install uuid`
+
+```javascript
+define(function(require,exports,module){
+  var uuid = require('uuid');
+  var id = uuid.v4();
+  // other
+});
+```
 
 ## Getting Started
 
