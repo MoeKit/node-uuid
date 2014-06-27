@@ -3,6 +3,8 @@ if (!this.uuid) {
   uuid = require('../uuid');
 }
 
+var expect = require('expect');
+
 //
 // x-platform log/assert shims
 //
@@ -33,6 +35,13 @@ function assert(res, msg) {
   } else {
     log('Pass: ' + msg);
   }
+
+    describe(msg,function(){
+        it(msg,function(){
+            expect(res).to.be(true);
+        })
+    });
+
 }
 
 //
