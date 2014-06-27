@@ -1,6 +1,8 @@
 # node-uuid
 
 ---
+[![Build Status](https://travis-ci.org/MoeKit/node-uuid.svg?branch=master)](https://travis-ci.org/MoeKit/node-uuid)
+[![Coverage Status](https://coveralls.io/repos/MoeKit/node-uuid/badge.png)](https://coveralls.io/r/MoeKit/node-uuid)
 
 Simple, fast generation of [RFC4122](http://www.ietf.org/rfc/rfc4122.txt) UUIDS.
 
